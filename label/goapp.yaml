@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goapp-pod-labeled2
+  labels:
+    env: dev
+    tier: frontend
+spec:
+  containers:
+  - image: dangtong/goapp
+    name: goapp-container2
+    ports:
+    - containerPort: 8080
+      protocol: TCP

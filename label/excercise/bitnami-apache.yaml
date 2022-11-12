@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache
+  labels:
+    tier: FrontEnd
+    app: apache
+spec:
+  containers:
+  - image: bitnami/apache
+    name: apache-container
+    ports:
+    - containerPort: 80
+      protocol: TCP
