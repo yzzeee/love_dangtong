@@ -1,0 +1,8 @@
+FROM golang:latest
+
+WORKDIR /src/
+COPY main.go go.* /src/
+RUN go env -w GO111MODULE=off
+RUN go build -o /bin/demo
+
+ENTRYPOINT ["/bin/demo"]
