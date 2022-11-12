@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goapp-pod
+spec:
+  containers:
+  - name: goapp-container
+    image: jollaman999/goapp
+    ports:
+    - containerPort: 8080
+      protocol: TCP
