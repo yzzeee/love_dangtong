@@ -4,7 +4,7 @@ metadata:
   name: nginx-goapp-ingress 
 spec: 
   rules: 
-  - host: nginx.acorn.com
+  - host: hello-nginx.acorn.com
     http: 
       paths: 
       - path: / 
@@ -14,7 +14,7 @@ spec:
             name: nginx-lb 
             port: 
               number: 80 
-  - host: goapp.acorn.com 
+  - host: hello-go.acorn.com 
     http: 
       paths: 
       - path: /
